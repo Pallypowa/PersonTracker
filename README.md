@@ -53,4 +53,13 @@ A service a default 8080 porton fut. Az alábbi endpointokat hoztam létre:
 | PUT     | /api/contacts                 | body: ContactDTO
 | DELETE  | /api/contacts/{id}            | id: UUID
 
+A hibákat az alábbi formátumban adom vissza:
+```json
+{
+  "message" : "errorMessage",
+  "timestamp" : "randomTimeStamp",
+  "status" : "httpStatusCode"
+}
+```
+
 Teszteket a service layerekre írtam. 
