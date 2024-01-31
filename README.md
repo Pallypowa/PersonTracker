@@ -19,6 +19,8 @@ A táblákat a Hibernate automatikusan létrehozza, majd droppolja is őket az a
 
 ```spring.jpa.hibernate.ddl-auto=create-drop```
 
+Az adatokat a src/main/resources/data.sql sql script hozza létre. 
+
 ### Endpoints
 
 A service a default 8080 porton fut. Az alábbi endpointokat hoztam létre: 
@@ -53,6 +55,7 @@ A service a default 8080 porton fut. Az alábbi endpointokat hoztam létre:
 | PUT     | /api/contacts                 | body: ContactDTO
 | DELETE  | /api/contacts/{id}            | id: UUID
 
+#### Hiba válasz
 A hibákat az alábbi formátumban adom vissza:
 ```json
 {
